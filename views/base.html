@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="author" content="Caitlin Bell">
+		<title>Chalkboard</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css">
+	</head>
+
+	<body background= "/static/chalkboard.jpg" >
+		<!-- Main Header, above nav bar-->
+		<header>
+			<p align="center" > <img src= '/static/logo.gif' width="1000" height= "250"></p>
+
+			<!-- Nav Bar -->
+			<div class="nav">
+				<ul>
+					<li class="home"><a href="/">Home</a></li>
+					<li class="about"><a href="/about">About</a></li>
+				</ul>
+			</div>
+        </header>
+
+        <p class = "welcome" align='center' >Welcome to Jobs!</p>
+        <p class = "welcome" align='center' >Showing Jobs 1 to 5 of 50</p>
+			<!--Login Form-->
+            % if name:
+			<form action = "/logout" method = "post" id = "logoutform" class = "login">
+				<p>Logged in as {{name}}</p>
+				<input value = "Logout" name = "logout" type = "submit"/>
+			</form>
+			% end
+			% if not name:
+			<form action = "/login" method = "post" id = "loginform" class = "login">
+            Username: <input name = "nick" type = "text"/>
+            Password: <input name = "password" type = "password"/>
+            <input value = "Login" type = "submit"/>
+            </form >
+			%end
+
+
+
+        {{!base}}
+
+
+  </body>
+</html>

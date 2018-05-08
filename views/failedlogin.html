@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="author" content="Caitlin Bell">
+		<title>Chalkboard</title>
+		<link rel="stylesheet" href="/static/style.css" type="text/css">
+	</head>
+
+	<body background= "/static/chalkboard.jpg" >
+		<!-- Main Header, above nav bar-->
+		<header>
+			<p align="center" > <img src= '/static/logo.gif' width="1000" height= "250"></p>
+
+			<!-- Nav Bar -->
+			<div class="nav">
+				<ul>
+					<li class="home"><a href="/">Home</a></li>
+					<li class="about"><a href="/about">About</a></li>
+				</ul>
+			</div>
+        </header>
+
+        <p align = "center">Login Failed, Please Try Again</p>
+        <form align="center" action="/login" method="post" id = "loginform">
+            <p align = "center" >Username: <input name="nick" type="text" /></p>
+            <p align ="center"> Password: <input name="password" type="password" /></p>
+            <p align = "center"><input  value="Login" type="submit" /></p>
+        </form>
+    </body>
+</html>

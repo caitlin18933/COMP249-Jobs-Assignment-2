@@ -1,0 +1,130 @@
+/* CSS Stylesheet for the COMP249 Jobs Board */
+/* Author: Caitlin Bell                     */
+
+/*Imports web font*/
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+
+html
+{
+
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+	font-size: 24px
+}
+
+
+p
+{
+	text-align: centre;
+}
+
+nav
+{
+	margin-bottom: 0;
+}
+
+
+.job, .jobinfo
+{
+	text-align: center;
+    width: 600px;
+	margin: auto;
+	border: 5px solid white;
+}
+
+.jobtitle
+{
+	font-size: 35px;
+}
+
+/*changes the text color and creates an underline when hovered*/
+.jobtitle:hover, .apply:hover
+{
+	text-decoration: underline;
+	color:#f48f42;
+}
+
+.apply
+{
+	text-align: right;
+}
+
+.nav ul
+{
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li
+{
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a
+{
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: .3s background-color;
+}
+
+/*changes the text colour and creates an underline*/
+.nav a:hover
+{
+  background-color: #f48f42;
+  text-decoration: underline
+}
+
+.nav a.active
+{
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+.login
+{
+	float: left;
+	text-align: left;
+	width: 25%;
+	border: 5px solid white;
+	margin-right: 0;
+}
+
+.welcome
+{
+    float: center;
+    text-align: center;
+}
+
+.post
+{
+    float: right;
+	text-align: left;
+	width: 25%;
+	border: 5px solid white;
+	margin-left: 0;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 200px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+ .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+}
